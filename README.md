@@ -55,8 +55,8 @@ c1 = &dc1;
 ## Compile & Run 🛠️ 
 Easiest way to compile is use Visual Studio.  
 Just open project and click build and then run.  
-Program will automatically detect your device. 
-Program automatically close when you disconnect gamepad.
+Program will automatically detect your device.  
+Program automatically close when you disconnect gamepad.  
 
 ## Future improvements 💡
  - Battery check and alert if low energy.
