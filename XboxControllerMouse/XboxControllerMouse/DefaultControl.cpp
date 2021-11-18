@@ -93,11 +93,12 @@ void DefaultControl::MouseControl()
         } break;
         default:
         {
-            // START release functions
+            // START release functions (only when __Hold() functions were called)
             DefaultControl::SendLeftMouseRelease(XINPUT_GAMEPAD_A);
 
-            // END own function
+            // END release functions
             
+
             // do NOT delete this
             gamepad->prevButton = 0x0000;
             // END do NOT delete this

@@ -10,12 +10,14 @@ int main(int argc, char* argv[])
     ShowWindow(GetConsoleWindow(), SW_MINIMIZE);
 
     Gamepad g1 = Gamepad();
+    Control* c1;
 
     //replace with your class
     DefaultControl dc1 = DefaultControl(&g1);
-    // END replace with your class
+    
+    c1 = &dc1;
 
-    Control* c1 = &dc1;
+    // END replace with your class
 
     while (g1.IsConnected() == 0)
     {
@@ -30,12 +32,3 @@ int main(int argc, char* argv[])
     }
     return 0;
 }
-
-//command line options:
-/*
-* Usage: xboxmouse.exe [--option1 <value1> [--option2 <value2>] ...]
- -lc   --load-config <classname> load config using class (default name: 'default.config')       
- -h    --help                   show this help
- -v    --version                show version number
-
-*/

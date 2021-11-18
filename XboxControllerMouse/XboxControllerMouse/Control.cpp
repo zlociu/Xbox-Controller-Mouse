@@ -4,7 +4,6 @@ void Control::SendLeftMouseClick(WORD xButton)
 {
     if ((gamepad->prevButton & xButton) == 0x0000)
     {
-        //SendMessage(currentWindow, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(cursorPos.x, cursorPos.y));
         SendMouse(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_ABSOLUTE, cursorPos);
         SendMouse(MOUSEEVENTF_LEFTUP | MOUSEEVENTF_ABSOLUTE, cursorPos);
         gamepad->prevButton |= xButton;
@@ -15,7 +14,6 @@ void Control::SendLeftMouseHold(WORD xButton)
 {
     if ((gamepad->prevButton & xButton) == 0x0000)
     {
-        //SendMessage(currentWindow, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(cursorPos.x, cursorPos.y));
         SendMouse(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_ABSOLUTE, cursorPos);
         gamepad->prevButton |= xButton;
     }
@@ -30,7 +28,6 @@ void Control::SendRightMouseClick(WORD xButton)
 {
     if ((gamepad->prevButton & xButton) == 0x0000)
     {
-        //SendMessage(currentWindow, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(cursorPos.x, cursorPos.y));
         SendMouse(MOUSEEVENTF_RIGHTDOWN | MOUSEEVENTF_ABSOLUTE, cursorPos);
         SendMouse(MOUSEEVENTF_RIGHTUP | MOUSEEVENTF_ABSOLUTE, cursorPos);
         gamepad->prevButton |= xButton;
@@ -41,7 +38,6 @@ void Control::SendMiddleMouseClick(WORD xButton)
 {
     if ((gamepad->prevButton & xButton) == 0x0000)
     {
-        //SendMessage(currentWindow, WM_LBUTTONDOWN, MK_LBUTTON, MAKELPARAM(cursorPos.x, cursorPos.y));
         SendMouse(MOUSEEVENTF_MIDDLEDOWN | MOUSEEVENTF_ABSOLUTE, cursorPos);
         SendMouse(MOUSEEVENTF_MIDDLEUP | MOUSEEVENTF_ABSOLUTE, cursorPos);
         gamepad->prevButton |= xButton;
@@ -121,7 +117,6 @@ void Control::CursorControlLeft(void)
         if (gamepad->LeftStickY > 0) cursorMove.y *= -1;
     }
 
-    //cursorPos = cursorPos + cursorMove; 
     if (cursorMove != POINT{ 0,0 })
     {
         SendMouse(MOUSEEVENTF_MOVE, cursorMove);
@@ -146,7 +141,6 @@ void Control::CursorControlRigth()
         if (gamepad->RightStickY > 0) cursorMove.y *= -1;
     }
 
-    //cursorPos = cursorPos + cursorMove; 
     if (cursorMove != POINT{ 0,0 })
     {
         SendMouse(MOUSEEVENTF_MOVE, cursorMove);
