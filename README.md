@@ -39,7 +39,8 @@ public:
         } break;
     ...
     ```
-3. In ___Source.cpp___ in _Main()_ function replace with your own class.
+    3. In ___Control.h___ are defined available functions you can use. You can also create new functions.
+3. In ___Source.cpp___ in `Main()` function replace with your own class.
 ```cpp
 Gamepad g1 = Gamepad();
 Control* c1;
@@ -56,7 +57,7 @@ c1 = &dc1;
 Easiest way to compile is use Visual Studio.  
 Just open project and click build and then run.  
 Program will automatically detect your device.  
-Program automatically close when you disconnect gamepad.  
+Program will automatically close when you disconnect gamepad.  
 
 ## Future improvements 💡
  - Battery check and alert if low energy.
