@@ -10,7 +10,7 @@ Working only on Windows.
 - mouse buttons & scroll functions
 - keyboard keys (single)
 - keyboard macros (up to 3 keys)
-- creating own profiles 🆕
+- creating own profiles
 
 ### Create own profile 💻
 If You want to create new profile, changing some of gamepad rules please read this part.
