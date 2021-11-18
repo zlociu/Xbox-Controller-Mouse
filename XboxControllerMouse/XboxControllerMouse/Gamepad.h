@@ -12,7 +12,7 @@ private:
 public:
     const int deadZoneLeft;
     const int deadZoneRight;
-    SHORT prevButton;
+    WORD prevButton;
 
 public:
     Gamepad() : deadZoneLeft(XINPUT_GAMEPAD_LEFT_THUMB_DEADZONE), deadZoneRight(XINPUT_GAMEPAD_RIGHT_THUMB_DEADZONE)
