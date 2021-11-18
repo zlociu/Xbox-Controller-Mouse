@@ -39,7 +39,7 @@ public:
         } break;
     ...
     ```
-    3. In ___Control.h___ are defined available functions you can use. You can also create new functions.
+    3. In ___Control.h___ are defined available functions that you can use. You can also create new functions.
 3. In ___Source.cpp___ in `Main()` function replace with your own class.
 ```cpp
 Gamepad g1 = Gamepad();
