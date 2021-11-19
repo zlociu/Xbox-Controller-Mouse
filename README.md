@@ -1,4 +1,4 @@
-# Xbox-Controller-Mouse 🎮 
+# Xbox-Controller-Mouse <img src="icon.ico" alt="mouse icon" height="48" />
 
 ## About
 Control Your computer with Xbox One gamepad.  
