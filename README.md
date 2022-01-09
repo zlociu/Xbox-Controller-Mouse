@@ -60,4 +60,5 @@ Program will automatically detect your device.
 Program will automatically close when you disconnect gamepad.  
 
 ## Future improvements 💡
- - Battery check and alert if low energy.
+ - Battery check ✔️ 
+ - Alert if low energy
