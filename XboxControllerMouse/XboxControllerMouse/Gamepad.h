@@ -1,6 +1,7 @@
 #pragma once
 #include <Windows.h>
 #include <Xinput.h>
+#include <stdio.h>
 
 class Gamepad
 {
@@ -8,10 +9,11 @@ private:
     DWORD hXbox;
     XINPUT_STATE xboxState;
     BOOL connected;
-    // control button state, prevent spaming key or mouse
+    XINPUT_BATTERY_INFORMATION batteryStatus;
 public:
     const int deadZoneLeft;
     const int deadZoneRight;
+    // control button state, prevent spaming key or mouse
     WORD prevButton;
 
 public:
@@ -68,4 +70,6 @@ public:
     void Refresh();
     BOOL IsConnected();
     void ResetHXboxId();
+    void ShowBatteryStatus();
+    void CheckBatteryStatus();
 };

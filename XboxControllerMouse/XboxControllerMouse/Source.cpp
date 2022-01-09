@@ -1,12 +1,9 @@
-#include <cstdlib>
-#include <cstdio>
 #include <Windows.h>
 #include "Gamepad.h"
 #include "DefaultControl.h"
 
 int main(int argc, char* argv[])
 {
-
     ShowWindow(GetConsoleWindow(), SW_MINIMIZE);
 
     Gamepad g1 = Gamepad();
@@ -14,7 +11,6 @@ int main(int argc, char* argv[])
 
     //replace with your class
     DefaultControl dc1 = DefaultControl(&g1);
-    
     c1 = &dc1;
 
     // END replace with your class
@@ -24,6 +20,10 @@ int main(int argc, char* argv[])
         Sleep(500);
         g1.ResetHXboxId();
     }
+
+    g1.CheckBatteryStatus();
+    g1.ShowBatteryStatus();
+
     while (g1.IsConnected() == 1)
     {
         g1.Refresh();
