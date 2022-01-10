@@ -21,14 +21,19 @@ int main(int argc, char* argv[])
         g1.ResetHXboxId();
     }
 
-    g1.CheckBatteryStatus();
-    g1.ShowBatteryStatus();
-
     while (g1.IsConnected() == 1)
     {
-        g1.Refresh();
-        c1->MouseControl();
-        Sleep(10);
+        g1.CheckBatteryStatus();
+        g1.ShowBatteryStatus();
+
+        for (int i = 0; i < 1000; i++)
+        {
+            g1.Refresh();
+            c1->MouseControl();
+            Sleep(10);
+        }
+
+        system("cls");
     }
     return 0;
 }
