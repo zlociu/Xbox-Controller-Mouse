@@ -59,6 +59,7 @@ Easiest way to compile is use Visual Studio.
 Just open project and click build and then run.  
 Program will automatically detect your device.  
 Program will automatically close when you disconnect gamepad.  
+⚠️ You may need to "Run as administrator" to use xbox gamepad in some applications (e.g. Task Manager).
 
 ## Future improvements 💡 
  - Alert if low energy
