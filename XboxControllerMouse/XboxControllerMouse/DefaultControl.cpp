@@ -22,7 +22,7 @@ void DefaultControl::MouseControl()
         case XINPUT_GAMEPAD_X: 
         {
             // START own function
-
+            DefaultControl::SendOneKey(XINPUT_GAMEPAD_X, VK_BACK);
             // END own function
         } break;
         case XINPUT_GAMEPAD_Y:
@@ -58,13 +58,13 @@ void DefaultControl::MouseControl()
         case XINPUT_GAMEPAD_LEFT_SHOULDER:
         {
             // START own function
-            DefaultControl::SendOneKey(XINPUT_GAMEPAD_LEFT_SHOULDER, VK_BACK);
+            DefaultControl::SendOneKey(XINPUT_GAMEPAD_LEFT_SHOULDER, VK_BROWSER_BACK);
             // END own function
         } break;
         case XINPUT_GAMEPAD_RIGHT_SHOULDER:
         {
             // START own function
-            DefaultControl::SendMacroKeyboard(XINPUT_GAMEPAD_RIGHT_SHOULDER, VK_SHIFT, VK_BACK);
+            DefaultControl::SendOneKey(XINPUT_GAMEPAD_RIGHT_SHOULDER, VK_BROWSER_FORWARD);
             // END own function
         } break;
         case XINPUT_GAMEPAD_DPAD_UP:
