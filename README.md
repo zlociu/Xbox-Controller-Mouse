@@ -11,6 +11,7 @@ Working only on Windows.
 - keyboard keys (single)
 - keyboard macros (up to 3 keys)
 - creating own profiles
+- battery status
 
 ### Create own profile 💻
 If You want to create new profile, changing some of gamepad rules please read this part.
@@ -58,7 +59,7 @@ Easiest way to compile is use Visual Studio.
 Just open project and click build and then run.  
 Program will automatically detect your device.  
 Program will automatically close when you disconnect gamepad.  
+⚠️ You may need to "Run as administrator" to use xbox gamepad in some applications (e.g. Task Manager).
 
-## Future improvements 💡
- - Battery check ✔️ 
+## Future improvements 💡 
  - Alert if low energy
